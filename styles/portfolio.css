@@ -1,0 +1,254 @@
+/* Hero Banner */
+.hero-container {
+    background-color: #0d0529;
+    color: #fff;
+    height: 600px;
+  }
+  body, html {
+    height: 100%;
+  }
+  .hero-image {
+  background-image: linear-gradient(rgba(27, 26, 26, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/Hero_Banner.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "REM", sans-serif; /* Import Google Fonts*/
+  }
+
+/* Content Section */
+#about{
+    padding:10px 0;
+    color:#0d0529;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width:70%;
+    border-radius: 15px;
+    padding-left: 50px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+    font-family: "Protest Strike", sans-serif;  /* Import Google Fonts*/
+}
+.about-col-2 p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+}
+.about-col-2 h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #0d0529;
+    font-family: "Dancing Script", cursive;
+}
+.about-col-2 h4{
+    font-family: "REM", sans-serif;   /* Import Google Fonts*/
+}
+
+
+/* Card Section */
+.content-container{
+    background-color: #0d0529;
+    width: 100%;
+    padding: 60px 0;
+}
+.content-container h1{
+    color:white;
+    text-align: center;
+    margin:10px;
+    padding: 30px;
+    font-family: "Protest Strike", sans-serif;    /* Import Google Fonts*/
+}
+.content-container h4{
+    color:white;
+}
+.content-container p{
+    color:white;
+}
+.work-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin: top 50px;
+    padding: 50px;
+}
+.content-image{
+    border-radius:10px;
+    position: relative;
+}
+.content-image img{
+    width:100%;
+    border-radius:10px;
+    display: block;
+}
+.content-image a{
+    color: white;
+}
+.content-video{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.yt-holder{
+    position:relative;
+    overflow:hidden;
+}
+.btn{
+    display: block;
+    margin:0 auto;
+    width: fit-content;
+    border:1px solid #fff;
+    padding: 14px 50px;
+    border-radius:6px;
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    background: #92a7ec;
+}
+
+/* Accordion */
+.container accordion-container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container accordion-container h1{
+    font-family: "Dancing Script", cursive;   /* Import Google Fonts*/
+}
+.wrapper > h1{
+  text-align: center;
+  font-family: "Dancing Script", cursive;     /* Import Google Fonts*/
+}
+.accordion {
+  background-color: #0d0529;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-family: "REM", sans-serif;
+}
+.active,
+.accordion:hover{
+  background-color: #92a7ec;
+}
+.pannel {
+  padding: 0 2 rem 2.5rem 2rem;
+  background-color: white;
+  overflow: hidden;
+  background-color: white;
+  display: none;
+}
+.pannel p{
+  color: #0d0529;
+  line-height: 1.5;  
+  font-weight: 600;
+}
+.faq {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+.faq.active{
+  border: none;
+}
+
+
+
+/* Footer */
+.footer-container {
+  background-color:white;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  padding: 3px;
+  text-align: center;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin:10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: #0d0529;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:#0d0529;
+  margin: 20px;
+  font-size:1.3em;
+}
+.footerBottom{
+  background-color: #0d0529;
+  color: white;
+  padding: 20px;
+  text-align:center;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+    flex-direction: column;
+  }
+  .footerNav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+  
+ 
