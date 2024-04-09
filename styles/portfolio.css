@@ -53,15 +53,15 @@
     font-family: "Protest Strike", sans-serif;  /* Import Google Fonts*/
 }
 .about-col-2 p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    font-family: "Dancing Script", cursive;
+    font-family: "REM", sans-serif;
 }
 .about-col-2 h2{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #0d0529;
-    font-family: "Dancing Script", cursive;
+    font-family: "REM", sans-serif;
 }
 .about-col-2 h4{
     font-family: "REM", sans-serif;   /* Import Google Fonts*/
@@ -81,11 +81,16 @@
     padding: 30px;
     font-family: "Protest Strike", sans-serif;    /* Import Google Fonts*/
 }
+
 .content-container h4{
     color:white;
 }
 .content-container p{
     color:white;
+}
+.content-container h5{
+  color:white;
+  text-align: center;
 }
 .work-list{
     display:grid;
@@ -106,18 +111,28 @@
 .content-image a{
     color: white;
 }
+
 .content-video{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 20px;
+  padding: 20px;
 }
-.yt-holder{
-    position:relative;
-    overflow:hidden;
+.yt-holder {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
+.yt-holder iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 .btn{
     display: block;
     margin:0 auto;
@@ -175,6 +190,7 @@
   color: #0d0529;
   line-height: 1.5;  
   font-weight: 600;
+  font-family: "REM", sans-serif;
 }
 .faq {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -222,6 +238,12 @@
   color:#0d0529;
   margin: 20px;
   font-size:1.3em;
+}
+.footer-container .socialIcons > a:hover{
+  opacity: 0.7;
+}
+.footer-container .footerNav ul li> a:hover{
+  opacity: 0.5;
 }
 .footerBottom{
   background-color: #0d0529;
